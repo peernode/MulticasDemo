@@ -7,16 +7,22 @@
 //
 
 #include "MulticastServerManager.hpp"
+#include "MulticastEchoServer.h"
 
 #include <iostream>
 
-MulticastServerManager* MulticastServerManager::_instance = NULL;
+MulticastServerManager* MulticastServerManager::_instance = nullptr;
 
 MulticastServerManager::MulticastServerManager(void)
 {
 }
+
 MulticastServerManager::~MulticastServerManager(void)
 {
+    if(_localServer != nullptr)
+    {
+        delete _localServer;
+    }
 }
 
 MulticastServerManager* MulticastServerManager::Instance()
@@ -27,6 +33,14 @@ MulticastServerManager* MulticastServerManager::Instance()
     }
     
     return _instance;
+}
+
+void MulticastServerManager::start()
+{
+    if(_localServer == nullptr)
+    {
+        _localServer = new MulticastEchoServer();
+    }
 }
 
 void MulticastServerManager::dorun(void)
@@ -46,17 +60,33 @@ void MulticastServerManager::dorun(void)
     }
 }
 
-void MulticastServerManager::addMulticastServer(Poco::Net::SocketAddress& server)
+void MulticastServerManager::addMulticastServer(Poco::Net::SocketAddress& server, unsigned short http_port)
 {
+    // 目前只保留一个server
+    if(!_entitys.empty())
+    {
+        return;
+    }
+    
     auto search = _entitys.find(server.host().toString());
     if(search == _entitys.end())
     {
-        _entitys[server.host().toString()] = new MulticastServerEntity(server);
-        std::cerr << "add MulticastServerEntity " << server.host().toString() << std::endl;
+        _entitys[server.host().toString()] = new MulticastServerEntity(server, http_port);
+        std::cerr << "add MulticastServerEntity " << server.host().toString() << " http port: "<<http_port << std::endl;
     }
 }
 
 int MulticastServerManager::getServerCount(void)
 {
     return (int)_entitys.size();
+}
+
+std::tuple<std::string, unsigned short> MulticastServerManager::getServerAndPort(void)
+{
+    if (_entitys.empty()) {
+        return std::make_tuple("", 0);
+    }
+    
+    auto it = _entitys.begin();
+    return std::make_tuple(it->first, it->second->httpPort());
 }

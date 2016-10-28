@@ -25,7 +25,7 @@ class MulticastServerEntity: public Poco::Runnable
 /// A simple sequential Multicast echo server.
 {
 public:
-    MulticastServerEntity(Poco::Net::SocketAddress& sender);
+    MulticastServerEntity(Poco::Net::SocketAddress& sender, unsigned short http_port);
     /// Creates the MulticastEchoServer.
     
     ~MulticastServerEntity();
@@ -34,6 +34,9 @@ public:
     Poco::UInt16 port() const;
     /// Returns the port the echo server is
     /// listening on.
+    
+    Poco::UInt16 httpPort() const;
+
     
     void run();
     /// Does the work.
@@ -44,7 +47,8 @@ private:
     Poco::Net::DatagramSocket  _socket;
     Poco::Net::SocketAddress    _server;
     Poco::Thread _thread;
-    bool         _stop;
+    bool         _stop = false;
+    Poco::UInt16 _http_port = 0;
     
     static const int SENDINTERVAL = 2500; //毫秒
     static const int RECVWAIT = 3000000; //微秒

@@ -79,9 +79,9 @@ void MulticastEchoServer::run()
 
                 std::cerr << "MulticastEchoServer: " << client_ip << " port:" <<  client_port << std::endl;
                 
-                if(PacketUtil::isMulticastServer(recv_msg)){
-                    std::cerr<<"server port: " << PacketUtil::getServerPort(recv_msg)<<std::endl;
-                    MulticastServerManager::Instance()->addMulticastServer(sender);
+                if(PacketUtil::isMulticastServer(recv_msg))
+                {
+                    MulticastServerManager::Instance()->addMulticastServer(sender, PacketUtil::getServerPort(recv_msg));
                 }
 			}
 			catch (Poco::Exception& exc)

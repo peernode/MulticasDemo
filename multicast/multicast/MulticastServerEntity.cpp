@@ -18,8 +18,9 @@ using Poco::Net::DatagramSocket;
 using Poco::Net::SocketAddress;
 using Poco::Net::IPAddress;
 
-MulticastServerEntity::MulticastServerEntity(Poco::Net::SocketAddress& sender):
+MulticastServerEntity::MulticastServerEntity(Poco::Net::SocketAddress& sender, Poco::UInt16 http_port):
 _server(sender),
+_http_port(http_port),
 _thread("MulticastServerEntity")
 {
     _socket.bind(SocketAddress(IPAddress(), 12364), true);
@@ -34,6 +35,11 @@ MulticastServerEntity::~MulticastServerEntity()
 Poco::UInt16 MulticastServerEntity::port() const
 {
     return _socket.address().port();
+}
+
+Poco::UInt16 MulticastServerEntity::httpPort()const
+{
+    return _http_port;
 }
 
 void MulticastServerEntity::run()

@@ -18,7 +18,7 @@ class PacketUtil
 public:
     static std::string getHelloPacket();
     static bool isMulticastServer(const std::string& packet);
-    static int getServerPort(const std::string& packet);
+    static unsigned short getServerPort(const std::string& packet);
 
 };
 

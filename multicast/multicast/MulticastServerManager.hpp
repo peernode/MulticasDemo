@@ -15,6 +15,7 @@
 #include <mutex>
 #include <unordered_map>
 
+class MulticastEchoServer;
 class MulticastServerManager
 {
 public:
@@ -22,10 +23,12 @@ public:
     ~MulticastServerManager(void);
     
 public:
+    void start(void);
     void dorun(void);
-    void addMulticastServer(Poco::Net::SocketAddress& server);
+    void addMulticastServer(Poco::Net::SocketAddress& server, unsigned short http_port);
     void removeMulticastServer(Poco::Net::SocketAddress& server);
     int getServerCount(void);
+    std::tuple<std::string, unsigned short> getServerAndPort(void);
     
 protected:
     MulticastServerManager(void);
@@ -34,6 +37,7 @@ protected:
 private:
     static MulticastServerManager* _instance;
     
+    MulticastEchoServer* _localServer = nullptr;
     std::unordered_map<std::string, MulticastServerEntity*> _entitys;  //key为IP
 
 };

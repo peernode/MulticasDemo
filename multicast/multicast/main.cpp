@@ -10,6 +10,8 @@
 #include <string>
 
 #include "MulticastEchoServer.h"
+#include "MulticastServerManager.hpp"
+
 #include "Poco/Net/MulticastSocket.h"
 #include "Poco/Net/SocketAddress.h"
 #include "Poco/Net/NetException.h"
@@ -56,16 +58,18 @@ unsigned int resp_parser(std::string& resp)
 
 void testMulticast()
 {
-    MulticastEchoServer echoServer;
-    MulticastSocket ms;
+    MulticastServerManager::Instance()->start();
     
-    std::string hello_json =
-    "{"
-    "\"server\": 0,"
-    "\"mac\": \"AABBCCDDEEFF\","
-    "\"dev\": \"iPhone_9.3.4_iPhone7.1\""
-    "}";
-    
+//    MulticastEchoServer echoServer;
+//    MulticastSocket ms;
+//    
+//    std::string hello_json =
+//    "{"
+//    "\"server\": 0,"
+//    "\"mac\": \"AABBCCDDEEFF\","
+//    "\"dev\": \"iPhone_9.3.4_iPhone7.1\""
+//    "}";
+//    
 //    Poco::Net::SocketAddress    _group("239.255.1.2", 12345);
 ////    ms.bind(SocketAddress(IPAddress(), _group.port()), true);
 //

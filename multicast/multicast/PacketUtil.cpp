@@ -56,7 +56,7 @@ bool PacketUtil::isMulticastServer(const std::string &packet)
     return  false;
 }
 
-int PacketUtil::getServerPort(const std::string& packet)
+unsigned short PacketUtil::getServerPort(const std::string& packet)
 {
     Parser parser;
     
