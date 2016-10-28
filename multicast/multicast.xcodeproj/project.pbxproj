@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		354683041DC2F84F003EBBED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 354683031DC2F84F003EBBED /* main.cpp */; };
+		3546830F1DC2FB4F003EBBED /* libPocoFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3546830E1DC2FB4F003EBBED /* libPocoFoundation.a */; };
+		354683151DC2FB7A003EBBED /* libPocoNet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354683101DC2FB7A003EBBED /* libPocoNet.a */; };
+		354683161DC2FB7A003EBBED /* libPocoJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354683111DC2FB7A003EBBED /* libPocoJSON.a */; };
+		354683171DC2FB7A003EBBED /* libPocoUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354683121DC2FB7A003EBBED /* libPocoUtil.a */; };
+		354683181DC2FB7A003EBBED /* libPocoXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354683131DC2FB7A003EBBED /* libPocoXML.a */; };
+		354683191DC2FB7A003EBBED /* libPocoZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354683141DC2FB7A003EBBED /* libPocoZip.a */; };
+		3546831A1DC31DCF003EBBED /* MulticastEchoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3546830A1DC2F896003EBBED /* MulticastEchoServer.cpp */; };
+		3546831D1DC321DE003EBBED /* MulticastServerEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3546831B1DC321DE003EBBED /* MulticastServerEntity.cpp */; };
+		354683201DC3273F003EBBED /* PacketUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3546831E1DC3273F003EBBED /* PacketUtil.cpp */; };
+		354683231DC34670003EBBED /* MulticastServerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 354683211DC34670003EBBED /* MulticastServerManager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		354682FE1DC2F84F003EBBED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		354683001DC2F84F003EBBED /* multicast */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = multicast; sourceTree = BUILT_PRODUCTS_DIR; };
+		354683031DC2F84F003EBBED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3546830A1DC2F896003EBBED /* MulticastEchoServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MulticastEchoServer.cpp; sourceTree = "<group>"; };
+		3546830B1DC2F896003EBBED /* MulticastEchoServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticastEchoServer.h; sourceTree = "<group>"; };
+		3546830E1DC2FB4F003EBBED /* libPocoFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundation.a; path = ../../../../work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac/libPocoFoundation.a; sourceTree = "<group>"; };
+		354683101DC2FB7A003EBBED /* libPocoNet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNet.a; path = ../../../../work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac/libPocoNet.a; sourceTree = "<group>"; };
+		354683111DC2FB7A003EBBED /* libPocoJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoJSON.a; path = ../../../../work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac/libPocoJSON.a; sourceTree = "<group>"; };
+		354683121DC2FB7A003EBBED /* libPocoUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoUtil.a; path = ../../../../work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac/libPocoUtil.a; sourceTree = "<group>"; };
+		354683131DC2FB7A003EBBED /* libPocoXML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoXML.a; path = ../../../../work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac/libPocoXML.a; sourceTree = "<group>"; };
+		354683141DC2FB7A003EBBED /* libPocoZip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoZip.a; path = ../../../../work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac/libPocoZip.a; sourceTree = "<group>"; };
+		3546831B1DC321DE003EBBED /* MulticastServerEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MulticastServerEntity.cpp; sourceTree = "<group>"; };
+		3546831C1DC321DE003EBBED /* MulticastServerEntity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MulticastServerEntity.hpp; sourceTree = "<group>"; };
+		3546831E1DC3273F003EBBED /* PacketUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PacketUtil.cpp; sourceTree = "<group>"; };
+		3546831F1DC3273F003EBBED /* PacketUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PacketUtil.hpp; sourceTree = "<group>"; };
+		354683211DC34670003EBBED /* MulticastServerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MulticastServerManager.cpp; sourceTree = "<group>"; };
+		354683221DC34670003EBBED /* MulticastServerManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MulticastServerManager.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		354682FD1DC2F84F003EBBED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354683151DC2FB7A003EBBED /* libPocoNet.a in Frameworks */,
+				354683161DC2FB7A003EBBED /* libPocoJSON.a in Frameworks */,
+				354683171DC2FB7A003EBBED /* libPocoUtil.a in Frameworks */,
+				354683181DC2FB7A003EBBED /* libPocoXML.a in Frameworks */,
+				354683191DC2FB7A003EBBED /* libPocoZip.a in Frameworks */,
+				3546830F1DC2FB4F003EBBED /* libPocoFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		354682F71DC2F84F003EBBED = {
+			isa = PBXGroup;
+			children = (
+				354683021DC2F84F003EBBED /* multicast */,
+				354683011DC2F84F003EBBED /* Products */,
+				3546830D1DC2FB4E003EBBED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		354683011DC2F84F003EBBED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				354683001DC2F84F003EBBED /* multicast */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		354683021DC2F84F003EBBED /* multicast */ = {
+			isa = PBXGroup;
+			children = (
+				3546830A1DC2F896003EBBED /* MulticastEchoServer.cpp */,
+				3546830B1DC2F896003EBBED /* MulticastEchoServer.h */,
+				354683031DC2F84F003EBBED /* main.cpp */,
+				3546831B1DC321DE003EBBED /* MulticastServerEntity.cpp */,
+				3546831C1DC321DE003EBBED /* MulticastServerEntity.hpp */,
+				354683211DC34670003EBBED /* MulticastServerManager.cpp */,
+				354683221DC34670003EBBED /* MulticastServerManager.hpp */,
+				3546831E1DC3273F003EBBED /* PacketUtil.cpp */,
+				3546831F1DC3273F003EBBED /* PacketUtil.hpp */,
+			);
+			path = multicast;
+			sourceTree = "<group>";
+		};
+		3546830D1DC2FB4E003EBBED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				354683101DC2FB7A003EBBED /* libPocoNet.a */,
+				354683111DC2FB7A003EBBED /* libPocoJSON.a */,
+				354683121DC2FB7A003EBBED /* libPocoUtil.a */,
+				354683131DC2FB7A003EBBED /* libPocoXML.a */,
+				354683141DC2FB7A003EBBED /* libPocoZip.a */,
+				3546830E1DC2FB4F003EBBED /* libPocoFoundation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		354682FF1DC2F84F003EBBED /* multicast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354683071DC2F84F003EBBED /* Build configuration list for PBXNativeTarget "multicast" */;
+			buildPhases = (
+				354682FC1DC2F84F003EBBED /* Sources */,
+				354682FD1DC2F84F003EBBED /* Frameworks */,
+				354682FE1DC2F84F003EBBED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = multicast;
+			productName = multicast;
+			productReference = 354683001DC2F84F003EBBED /* multicast */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		354682F81DC2F84F003EBBED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "徐俊扬";
+				TargetAttributes = {
+					354682FF1DC2F84F003EBBED = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 354682FB1DC2F84F003EBBED /* Build configuration list for PBXProject "multicast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 354682F71DC2F84F003EBBED;
+			productRefGroup = 354683011DC2F84F003EBBED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				354682FF1DC2F84F003EBBED /* multicast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		354682FC1DC2F84F003EBBED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3546831D1DC321DE003EBBED /* MulticastServerEntity.cpp in Sources */,
+				354683201DC3273F003EBBED /* PacketUtil.cpp in Sources */,
+				3546831A1DC31DCF003EBBED /* MulticastEchoServer.cpp in Sources */,
+				354683041DC2F84F003EBBED /* main.cpp in Sources */,
+				354683231DC34670003EBBED /* MulticastServerManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		354683051DC2F84F003EBBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		354683061DC2F84F003EBBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		354683081DC2F84F003EBBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/src/poco_1.6.1/Net/include,
+					/Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/src/poco_1.6.1/JSON/include,
+					/Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/src/poco_1.6.1/Foundation/include,
+				);
+				LIBRARY_SEARCH_PATHS = /Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		354683091DC2F84F003EBBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/src/poco_1.6.1/Net/include,
+					/Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/src/poco_1.6.1/JSON/include,
+					/Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/src/poco_1.6.1/Foundation/include,
+				);
+				LIBRARY_SEARCH_PATHS = /Users/xujunyang/work/gitdir/MediaProxy/FunKernel/Library/libs/poco_1.6.1/Mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		354682FB1DC2F84F003EBBED /* Build configuration list for PBXProject "multicast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354683051DC2F84F003EBBED /* Debug */,
+				354683061DC2F84F003EBBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		354683071DC2F84F003EBBED /* Build configuration list for PBXNativeTarget "multicast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354683081DC2F84F003EBBED /* Debug */,
+				354683091DC2F84F003EBBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 354682F81DC2F84F003EBBED /* Project object */;
+}
