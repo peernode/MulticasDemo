@@ -2,8 +2,8 @@
 //  MulticastServerManager.hpp
 //  multicast
 //
-//  Created by 徐俊扬 on 16/10/28.
-//  Copyright © 2016年 徐俊扬. All rights reserved.
+//  Created by xu.junyang on 16/10/28.
+//  Copyright © 2016年 xu.junyang. All rights reserved.
 //
 
 #ifndef MulticastServerManager_hpp
@@ -29,6 +29,7 @@ public:
     void removeMulticastServer(Poco::Net::SocketAddress& server);
     int getServerCount(void);
     std::tuple<std::string, unsigned short> getServerAndPort(void);
+    std::string getServerInfo(void);
     
 protected:
     MulticastServerManager(void);

@@ -2,8 +2,8 @@
 //  main.cpp
 //  multicast
 //
-//  Created by 徐俊扬 on 16/10/28.
-//  Copyright © 2016年 徐俊扬. All rights reserved.
+//  Created by xu.junyang on 16/10/28.
+//  Copyright © 2016年 xu.junyang. All rights reserved.
 //
 
 #include <iostream>

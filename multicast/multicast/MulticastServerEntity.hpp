@@ -2,8 +2,8 @@
 //  HeartBeatEntity.hpp
 //  multicast
 //
-//  Created by 徐俊扬 on 16/10/28.
-//  Copyright © 2016年 徐俊扬. All rights reserved.
+//  Created by xu.junyang on 16/10/28.
+//  Copyright © 2016年 xu.junyang. All rights reserved.
 //
 
 #ifndef HeartBeatEntity_hpp
@@ -41,7 +41,9 @@ public:
     void run();
     /// Does the work.
     
-    bool ifStop(){ return _stop;}
+    bool ifStop();
+    
+    std::string host();
     
 private:
     Poco::Net::DatagramSocket  _socket;
